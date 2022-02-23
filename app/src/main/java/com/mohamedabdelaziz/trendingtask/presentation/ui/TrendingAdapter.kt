@@ -1,5 +1,6 @@
 package com.mohamedabdelaziz.trendingtask.presentation.ui
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Color
 
@@ -58,6 +59,7 @@ class TrendingAdapter(private val context: Context) : RecyclerView.Adapter<Trend
         return trendingListResponse.size
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     fun setList(trendingListResponse: List<TrendingItemResponse>) {
          this.trendingListResponse = trendingListResponse as MutableList<TrendingItemResponse>
         notifyDataSetChanged()

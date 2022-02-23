@@ -18,29 +18,29 @@ import com.mohamedabdelaziz.trendingtask.databinding.ActivityMainBinding
 
 @AndroidEntryPoint
 class MainActivity : BaseActivity() {
-    private var binding: ActivityMainBinding? = null
-    private var trendingAdapter: TrendingAdapter? = null
+    private lateinit var binding: ActivityMainBinding 
+    private lateinit var trendingAdapter: TrendingAdapter
     private var isConnectedForMenu = false
     private val trendingViewModel by viewModels<TrendingViewModel>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         init()
-        binding?.trendRecyclerView?.layoutManager = LinearLayoutManager(this)
-        binding?.trendSwipeRefresh?.setColorSchemeResources(R.color.black)
-        binding?.trendRecyclerView?.adapter = trendingAdapter
-        binding?.trendSwipeRefresh?.setOnRefreshListener {
+        binding.trendRecyclerView.layoutManager = LinearLayoutManager(this)
+        binding.trendSwipeRefresh.setColorSchemeResources(R.color.black)
+        binding.trendRecyclerView.adapter = trendingAdapter
+        binding.trendSwipeRefresh.setOnRefreshListener {
             if (isConnectedForMenu) getTrendingDataRemote(Constants.DEFAULT_SORT) else getTrendingDataLocal(
                 Constants.DEFAULT_SORT
             )
-            binding?.trendSwipeRefresh?.isRefreshing = false
+            binding.trendSwipeRefresh.isRefreshing = false
         }
-        binding?.retryBtn?.setOnClickListener {
+        binding.retryBtn.setOnClickListener {
             if (isConnectedForMenu) {
                 visibleTrendRecyclerView()
                 getTrendingDataRemote(Constants.DEFAULT_SORT)
             } else visibleNoInternet()
         }
-        binding?.offlineModeBtn?.setOnClickListener {
+        binding.offlineModeBtn.setOnClickListener {
             visibleTrendRecyclerView()
             getTrendingDataLocal(Constants.DEFAULT_SORT)
         }
@@ -58,68 +58,68 @@ class MainActivity : BaseActivity() {
     }
 
     private fun visibleTrendRecyclerView() {
-        binding?.noInternetConstraintLayout?.visibility = View.GONE
-        binding?.shimmerLayout?.visibility = View.VISIBLE
-        binding?.trendRecyclerView?.visibility = View.VISIBLE
-        binding?.shimmerLayout?.startShimmer()
+        binding.noInternetConstraintLayout.visibility = View.GONE
+        binding.shimmerLayout.visibility = View.VISIBLE
+        binding.trendRecyclerView.visibility = View.VISIBLE
+        binding.shimmerLayout.startShimmer()
         getTrendingDataRemote(Constants.DEFAULT_SORT)
     }
 
     private fun visibleNoInternet() {
-        binding?.noInternetConstraintLayout?.visibility = View.VISIBLE
-        binding?.shimmerLayout?.visibility = View.GONE
-        binding?.trendRecyclerView?.visibility = View.GONE
+        binding.noInternetConstraintLayout.visibility = View.VISIBLE
+        binding.shimmerLayout.visibility = View.GONE
+        binding.trendRecyclerView.visibility = View.GONE
     }
 
     private fun init() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        setSupportActionBar(binding?.trendingToolbar)
+        setSupportActionBar(binding.trendingToolbar)
         trendingAdapter = TrendingAdapter(this)
     }
 
     private fun getTrendingDataRemote(sortType: Int) {
-        binding?.shimmerLayout?.startShimmer()
+        binding.shimmerLayout.startShimmer()
         trendingViewModel.trendingResponseMutableLiveData.observe(
             this,
             { trendingListResponse: List<TrendingItemResponse> ->
                 when (sortType) {
-                    Constants.DEFAULT_SORT -> trendingAdapter?.setList(trendingListResponse)
+                    Constants.DEFAULT_SORT -> trendingAdapter.setList(trendingListResponse)
                     Constants.SORT_NAME -> {
                         val sortedWithName =
                             trendingListResponse.sortedWith(compareBy({ it.name }, { it.name }))
-                        trendingAdapter?.setList(sortedWithName)
+                        trendingAdapter.setList(sortedWithName)
                     }
                     Constants.SORT_STAR -> {
                         val sortedWithStars =
                             trendingListResponse.sortedWith(compareBy({ it.stars }, { it.stars }))
-                        trendingAdapter?.setList(sortedWithStars)
+                        trendingAdapter.setList(sortedWithStars)
                     }
                 }
-                binding?.shimmerLayout?.stopShimmer()
-                binding?.shimmerLayout?.visibility = View.GONE
+                binding.shimmerLayout.stopShimmer()
+                binding.shimmerLayout.visibility = View.GONE
             })
     }
 
     private fun getTrendingDataLocal(sortType: Int) {
-        binding?.shimmerLayout?.startShimmer()
+        binding.shimmerLayout.startShimmer()
         trendingViewModel.getTrendingListLocal()
         trendingViewModel.getTrendingListLocal()
             .observe(this, { trendingListResponse: List<TrendingItemResponse> ->
                 when (sortType) {
-                    Constants.DEFAULT_SORT -> trendingAdapter?.setList(trendingListResponse)
+                    Constants.DEFAULT_SORT -> trendingAdapter.setList(trendingListResponse)
                     Constants.SORT_NAME -> {
                         val sortedWithName =
                             trendingListResponse.sortedWith(compareBy({ it.name }, { it.name }))
-                        trendingAdapter?.setList(sortedWithName)
+                        trendingAdapter.setList(sortedWithName)
                     }
                     Constants.SORT_STAR -> {
                         val sortedWithStars =
                             trendingListResponse.sortedWith(compareBy({ it.stars }, { it.stars }))
-                        trendingAdapter?.setList(sortedWithStars)
+                        trendingAdapter.setList(sortedWithStars)
                     }
                 }
-                binding?.shimmerLayout?.stopShimmer()
-                binding?.shimmerLayout?.visibility = View.GONE
+                binding.shimmerLayout.stopShimmer()
+                binding.shimmerLayout.visibility = View.GONE
             })
     }
 
