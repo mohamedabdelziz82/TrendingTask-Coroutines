@@ -37,23 +37,24 @@ jobs:
           echo test, and deploy your project.
 
 
-  generate-apk:
-    name: Generate apk
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
+build-debug-apk:
+      strategy:
+        fail-fast: false
+        matrix:
+          agp: [ "" ]
+          kotlin: [ "" ]
+          experimental: [ false ]
+          name: [ "stable" ]
+          include:
+            - agp: 4.2.+
+              experimental: true
+              name: AGP-4.2.+
+            - kotlin: 1.4.20+
+              experimental: true
+              name: kotlin-EAP-1.4.20+
 
-      - name: Setup JDK 1.8
-        uses: actions/setup-java@v1
-        with:
-          java-version: 1.8
-
-      - name: Generate apk
-        run: ./gradlew assembleDebug
-      - name: Make gradlew executable
-        run: chmod +x ./gradlew
-      - name: Upload APK
-        uses: actions/upload-artifact@v1
-        with:
-          name: build-output
-          path: app/build/outputs/apk/debug/app-debug.apk
+      continue-on-error: ${{ matrix.experimental }}
+      name: Build Debug APK - ${{ matrix.name }} - Experimental ${{ matrix.experimental }}
+      env:
+        VERSION_AGP: ${{ matrix.agp }}
+        VERSION_KOTLIN: ${{ matrix.kotlin }}
