@@ -5,6 +5,9 @@ plugins {
     id 'kotlin-kapt'
 }
 android {
+    lintOptions {
+        abortOnError false
+    }
     compileSdk 31
     defaultConfig {
         applicationId "com.mohamedabdelaziz.trendingtask"
