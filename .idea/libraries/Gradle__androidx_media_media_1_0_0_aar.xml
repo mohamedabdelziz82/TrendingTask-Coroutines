@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.media:media:1.0.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$APPLICATION_CONFIG_DIR$/caches/transforms-3/459125f2ffbe094735f71ecc5648d311/transformed/media-1.0.0/annotations.zip!/" />
+      <root url="jar://$APPLICATION_CONFIG_DIR$/caches/transforms-3/66cd75b7e354f61295e05cbe4812b139/transformed/media-1.0.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$APPLICATION_CONFIG_DIR$/caches/transforms-3/459125f2ffbe094735f71ecc5648d311/transformed/media-1.0.0/jars/classes.jar!/" />
-      <root url="file://$APPLICATION_CONFIG_DIR$/caches/transforms-3/459125f2ffbe094735f71ecc5648d311/transformed/media-1.0.0/res" />
-      <root url="file://$APPLICATION_CONFIG_DIR$/caches/transforms-3/459125f2ffbe094735f71ecc5648d311/transformed/media-1.0.0/AndroidManifest.xml" />
+      <root url="file://$APPLICATION_CONFIG_DIR$/caches/transforms-3/66cd75b7e354f61295e05cbe4812b139/transformed/media-1.0.0/res" />
+      <root url="jar://$APPLICATION_CONFIG_DIR$/caches/transforms-3/66cd75b7e354f61295e05cbe4812b139/transformed/media-1.0.0/jars/classes.jar!/" />
+      <root url="file://$APPLICATION_CONFIG_DIR$/caches/transforms-3/66cd75b7e354f61295e05cbe4812b139/transformed/media-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

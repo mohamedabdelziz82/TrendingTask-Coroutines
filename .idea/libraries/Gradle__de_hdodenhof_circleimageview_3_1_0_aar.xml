@@ -4,9 +4,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/db256654a9d97235b7c88db479c36f8e/transformed/jetified-circleimageview-3.1.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/db256654a9d97235b7c88db479c36f8e/transformed/jetified-circleimageview-3.1.0/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/db256654a9d97235b7c88db479c36f8e/transformed/jetified-circleimageview-3.1.0/jars/classes.jar!/" />
-      <root url="jar://$APPLICATION_CONFIG_DIR$/caches/transforms-3/24a53940348d71f4d22b620d1a568698/transformed/jetified-circleimageview-3.1.0/jars/classes.jar!/" />
-      <root url="file://$APPLICATION_CONFIG_DIR$/caches/transforms-3/24a53940348d71f4d22b620d1a568698/transformed/jetified-circleimageview-3.1.0/AndroidManifest.xml" />
-      <root url="file://$APPLICATION_CONFIG_DIR$/caches/transforms-3/24a53940348d71f4d22b620d1a568698/transformed/jetified-circleimageview-3.1.0/res" />
+      <root url="jar://$APPLICATION_CONFIG_DIR$/caches/transforms-3/cfd7c8d8c227e3662c6cbfaddd6cdd30/transformed/jetified-circleimageview-3.1.0/jars/classes.jar!/" />
+      <root url="file://$APPLICATION_CONFIG_DIR$/caches/transforms-3/cfd7c8d8c227e3662c6cbfaddd6cdd30/transformed/jetified-circleimageview-3.1.0/res" />
+      <root url="file://$APPLICATION_CONFIG_DIR$/caches/transforms-3/cfd7c8d8c227e3662c6cbfaddd6cdd30/transformed/jetified-circleimageview-3.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$APPLICATION_CONFIG_DIR$/caches/modules-2/files-2.1/de.hdodenhof/circleimageview/3.1.0/e33964c462b854162fee2bd3cd52889ef878df77/circleimageview-3.1.0-javadoc.jar!/" />

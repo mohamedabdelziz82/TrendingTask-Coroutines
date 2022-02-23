@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.room:room-runtime:2.4.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$APPLICATION_CONFIG_DIR$/caches/transforms-3/3db6a856ef164bbc1511716890aeb559/transformed/room-runtime-2.4.0/annotations.zip!/" />
+      <root url="jar://$APPLICATION_CONFIG_DIR$/caches/transforms-3/6eb8e0d884faff14a0786c02a8122649/transformed/room-runtime-2.4.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$APPLICATION_CONFIG_DIR$/caches/transforms-3/3db6a856ef164bbc1511716890aeb559/transformed/room-runtime-2.4.0/jars/classes.jar!/" />
-      <root url="file://$APPLICATION_CONFIG_DIR$/caches/transforms-3/3db6a856ef164bbc1511716890aeb559/transformed/room-runtime-2.4.0/res" />
-      <root url="file://$APPLICATION_CONFIG_DIR$/caches/transforms-3/3db6a856ef164bbc1511716890aeb559/transformed/room-runtime-2.4.0/AndroidManifest.xml" />
+      <root url="file://$APPLICATION_CONFIG_DIR$/caches/transforms-3/6eb8e0d884faff14a0786c02a8122649/transformed/room-runtime-2.4.0/AndroidManifest.xml" />
+      <root url="jar://$APPLICATION_CONFIG_DIR$/caches/transforms-3/6eb8e0d884faff14a0786c02a8122649/transformed/room-runtime-2.4.0/jars/classes.jar!/" />
+      <root url="file://$APPLICATION_CONFIG_DIR$/caches/transforms-3/6eb8e0d884faff14a0786c02a8122649/transformed/room-runtime-2.4.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

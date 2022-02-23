@@ -2,15 +2,15 @@
   <library name="Gradle: androidx.activity:activity:1.4.0@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/aaa88c6e401bda0aa8600df9c4048484/transformed/jetified-activity-1.4.0/annotations.zip!/" />
-      <root url="jar://$APPLICATION_CONFIG_DIR$/caches/transforms-3/6e2be7a80437c5653f5ddf850671b81e/transformed/jetified-activity-1.4.0/annotations.zip!/" />
+      <root url="jar://$APPLICATION_CONFIG_DIR$/caches/transforms-3/9269868f0b746e8538010ce2aff14b1b/transformed/jetified-activity-1.4.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/aaa88c6e401bda0aa8600df9c4048484/transformed/jetified-activity-1.4.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/aaa88c6e401bda0aa8600df9c4048484/transformed/jetified-activity-1.4.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/aaa88c6e401bda0aa8600df9c4048484/transformed/jetified-activity-1.4.0/AndroidManifest.xml" />
-      <root url="file://$APPLICATION_CONFIG_DIR$/caches/transforms-3/6e2be7a80437c5653f5ddf850671b81e/transformed/jetified-activity-1.4.0/AndroidManifest.xml" />
-      <root url="jar://$APPLICATION_CONFIG_DIR$/caches/transforms-3/6e2be7a80437c5653f5ddf850671b81e/transformed/jetified-activity-1.4.0/jars/classes.jar!/" />
-      <root url="file://$APPLICATION_CONFIG_DIR$/caches/transforms-3/6e2be7a80437c5653f5ddf850671b81e/transformed/jetified-activity-1.4.0/res" />
+      <root url="file://$APPLICATION_CONFIG_DIR$/caches/transforms-3/9269868f0b746e8538010ce2aff14b1b/transformed/jetified-activity-1.4.0/AndroidManifest.xml" />
+      <root url="file://$APPLICATION_CONFIG_DIR$/caches/transforms-3/9269868f0b746e8538010ce2aff14b1b/transformed/jetified-activity-1.4.0/res" />
+      <root url="jar://$APPLICATION_CONFIG_DIR$/caches/transforms-3/9269868f0b746e8538010ce2aff14b1b/transformed/jetified-activity-1.4.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
